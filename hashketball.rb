@@ -180,7 +180,7 @@ end
 def player_stats(name)
   game_hash.each do |team, team_stats|
     team_stats.each do |outer_key, team_value|
-      team_value.each do |key, value|
+      team_value.each do |name|
         binding.pry
       end 
     end
