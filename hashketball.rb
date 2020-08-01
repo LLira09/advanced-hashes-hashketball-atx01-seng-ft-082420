@@ -162,13 +162,15 @@ def team_names
 end
 
 def player_numbers(t_name)
+  players_num = []
   game_hash.each do |team, team_stats|
     if team_stats[:team_name] == t_name
-      team_stats[:player].map do |key, number|
-        points[:number]
+      team_stats[:player].each do |key, p_number|
+        players_num.push(p_number[:number])
       end
     end
   end
+  players_num
 end
 
 def player_stats
