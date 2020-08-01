@@ -165,7 +165,13 @@ def player_numbers(t_name)
   players_num = []
   game_hash.each do |team, team_stats|
     if team_stats[:team_name] == t_name
-      
+      team_stats.each do |t_stats, value|
+        if t_stats == :players 
+          value.each do |player|
+            players_num.push(player[:number])
+          end
+        end
+      end
     end
   end
   players_num
