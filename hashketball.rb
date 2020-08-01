@@ -177,8 +177,10 @@ def player_numbers(t_name)
   players_num
 end
 
-def player_stats(players_name)
-  
+def player_stats(name)
+  game_hash.each do |team, team_stats|
+    binding.pry
+  end
 end
 
 def big_shoe_rebounds
