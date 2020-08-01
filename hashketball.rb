@@ -183,7 +183,6 @@ def player_stats(name)
       if player[:player_name] == name 
         return player
       end
-      binding.pry
     end 
   end
 end
