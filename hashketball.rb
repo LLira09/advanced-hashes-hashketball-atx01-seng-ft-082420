@@ -177,7 +177,7 @@ def player_numbers(t_name)
   players_num
 end
 
-def player_stats
+def player_stats(players_name)
   
 end
 
